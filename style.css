@@ -134,6 +134,7 @@ footer a {
     }
     .serie_img {
         width: 100%;
+        margin: 0 auto;
     }
     
     .serie_img img {
