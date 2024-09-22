@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Sofadi+One&display=swap');
 
 
@@ -53,7 +52,7 @@ header a:hover {
 }
 
 .main_bg {
-    background-image: url(img/daredevil_1920x1080.jpg);    
+    background-image: url(img/daredevil_1920x1080.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,12 +87,12 @@ header a:hover {
 
 .serie_txt {
     text-align: justify;
-    width: 50vw; 
-    padding: 20px;   
+    width: 50vw;
+    padding: 20px;
     font-family: var(--font_1);
     font-size: 32px;
     color: white;
-} 
+}
 
 footer {
     text-align: center;
@@ -108,6 +107,10 @@ footer a {
 }
 
 @media screen and (max-width: 480px) {
+
+    body {
+        max-width: 480px;
+    }
 
     header {
         background-color: #080808;
@@ -129,24 +132,25 @@ footer a {
     }
 
     .serie_tv {
-    display: block;
-    width: 100vw;
+        display: block;
+        width: 100vw;
     }
+
     .serie_img {
         width: 100%;
         margin: 0 auto;
     }
-    
+
     .serie_img img {
         width: 450px;
     }
 
     .serie_txt {
         text-align: justify;
-        width: 90vw; 
-        padding: 20px;   
+        width: 90vw;
+        padding: 20px;
         font-family: var(--font_1);
         font-size: 32px;
         color: white;
-    } 
+    }
 }
