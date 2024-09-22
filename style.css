@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Sofadi+One&display=swap');
+
+
+
+:root {
+    --cor1: #530919;
+    --cor_hover: #E33432;
+
+    --font_1: "Baloo Bhaijaan", sans-serif;
+    --font_2: 'Sofadi One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #530919;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+li {
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    margin: 100px;
+    color: white;
+    font-family: var(--font_2);
+    font-size: 1.5em;
+}
+
+header a:hover {
+    color: #E33432;
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 100px;
+}
+
+.main_bg {
+    background-image: url(img/daredevil_1920x1080.jpg);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: white;
+}
+
+.main_bg h1 {
+    font-family: var(--font_2);
+    font-size: 5em;
+}
+
+.main_bg p {
+    font-family: var(--font_1);
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.serie_tv {
+    display: flex;
+}
+
+.serie_img {
+    width: 50svw;
+}
+
+.serie_img img {
+    width: 600px;
+}
+
+.serie_txt {
+    text-align: justify;
+    width: 50vw; 
+    padding: 20px;   
+    font-family: var(--font_1);
+    font-size: 32px;
+    color: white;
+} 
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: var(--font_1);
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E33432;
+}
+
+@media screen and (max-width: 480px) {
+
+    .serie_tv {
+    display: block;
+    width: 100vw;
+    }
+
+    .serie_txt {
+        text-align: justify;
+        width: 90vw; 
+        padding: 20px;   
+        font-family: var(--font_1);
+        font-size: 32px;
+        color: white;
+    } 
+}
