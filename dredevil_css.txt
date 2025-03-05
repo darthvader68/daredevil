@@ -1,0 +1,251 @@
+daredevil_css
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Sofadi+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+:root {
+    --cor1: #530919;
+    --cor_hover: #E33432;
+    --cor_secondary: #8B0000;
+    --font_1: "Baloo Bhaijaan", sans-serif;
+    --font_2: 'Sofadi One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor1);
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    font-family: var(--font_2);
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+header a:hover {
+    color: var(--cor_hover);
+    transform: scale(1.1);
+}
+
+li {
+    display: inline-block;
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+.main_bg {
+    background-image: url(img/daredevil_1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.main_bg h1 {
+    font-family: var(--font_2);
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.main_bg .tagline {
+    font-family: var(--font_1);
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.serie_tv {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: var(--cor_secondary);
+}
+
+.serie_img {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.serie_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.serie_txt {
+    width: 50%;
+    padding: 0 40px;
+    font-family: var(--font_1);
+    font-size: 1.2em;
+}
+
+.serie_txt h2 {
+    margin-bottom: 20px;
+    color: var(--cor_hover);
+}
+
+.character-section {
+    background-color: var(--cor1);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.character-section h2 {
+    font-family: var(--font_2);
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.character-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.character-card {
+    background-color: var(--cor_secondary);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.character-card h3 {
+    font-family: var(--font_2);
+    color: var(--cor_hover);
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--cor_secondary);
+    text-align: center;
+    color: white;
+    font-family: var(--font_1);
+    padding: 30px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--cor_hover);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor_hover);
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .serie_tv, .character-grid {
+        flex-direction: column;
+    }
+
+    .serie_img, .serie_txt, .character-card {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main_bg h1 {
+        font-size: 3em;
+    }
+
+    .character-card img {
+        width: 150px;
+        height: 150px;
+    }
+}

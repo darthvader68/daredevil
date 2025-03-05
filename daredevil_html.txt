@@ -1,0 +1,87 @@
+daredevil html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daredevil - The Man Without Fear - Explore the world of Marvel's blind superhero">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo_dd.png" type="image/png">
+    <title>Daredevil - The Man Without Fear</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_dd.png" alt="Daredevil Logo" loading="lazy">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>    
+    
+    <main>
+        <section id="home" class="main_bg">
+            <div class="hero-content">
+                <h1>Daredevil</h1>
+                <p aria-label="Daredevil written in braille">⠙ ⠁ ⠗ ⠑ ⠙ ⠑ ⠧ ⠊ ⠇</p>
+                <p class="tagline">The Man Without Fear</p>
+                <p aria-label="The man without fear in braille">⠨⠞ ⠓ ⠑ ⠍ ⠁ ⠝ ⠺ ⠊ ⠞ ⠓ ⠕ ⠥ ⠞ ⠁ ⠋ ⠑ ⠁ ⠗</p>
+            </div>
+        </section>
+
+        <section id="about" class="serie_tv">
+            <div class="serie_img">
+                <img src="img/serie_netflix.png" alt="Daredevil Netflix Series Poster" loading="lazy">
+            </div>
+            <div class="serie_txt">
+                <h2>About the Series</h2>
+                <p>The series follows Matt Murdock, a blind lawyer who uses his heightened senses, acquired after a childhood accident, to fight crime on the streets of Hell's Kitchen, New York. Blending legal drama with superhero action, Daredevil explores themes of justice, morality, and personal sacrifice.</p>
+            </div>
+        </section>
+
+        <section id="characters" class="character-section">
+            <h2>Key Characters</h2>
+            <div class="character-grid">
+                <div class="character-card">
+                    <img src="img/matt_murdock.jpg" alt="Matt Murdock" loading="lazy">
+                    <h3>Matt Murdock</h3>
+                    <p>Blind lawyer by day, vigilante by night</p>
+                </div>
+                <div class="character-card">
+                    <img src="img/foggy_nelson.jpg" alt="Foggy Nelson" loading="lazy">
+                    <h3>Foggy Nelson</h3>
+                    <p>Matt's law partner and best friend</p>
+                </div>
+                <div class="character-card">
+                    <img src="img/karen_page.jpg" alt="Karen Page" loading="lazy">
+                    <h3>Karen Page</h3>
+                    <p>Investigative journalist and ally</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2024 Daredevil Fan Site. Developed by <a href="https://github.com/darthvader68" target="_blank" rel="noopener noreferrer">Milton Gomes</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
